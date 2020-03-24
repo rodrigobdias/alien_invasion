@@ -20,3 +20,6 @@ class Settings():
     @property
     def bg_color(self):
        return self._bg_color
+
+
+
