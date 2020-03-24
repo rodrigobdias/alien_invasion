@@ -20,7 +20,7 @@ def run_game():
 
     # Inicia o laço principal do jogo
     while True:
-        gf.check_events()
+        gf.check_events(ship)
         gf.update_screen(ai_settings, screen, ship)
 
 if __name__ == '__main__':
