@@ -8,6 +8,7 @@ class Settings():
         self._screen_width = 1200
         self._screen_height = 800
         self._bg_color = (230, 230, 230)
+        self._ship_speed_factor =1.5
 
     @property
     def screen_width(self):
@@ -20,6 +21,10 @@ class Settings():
     @property
     def bg_color(self):
        return self._bg_color
+
+    @property
+    def ship_speed_factor(self):
+        return self._ship_speed_factor
 
 
 
