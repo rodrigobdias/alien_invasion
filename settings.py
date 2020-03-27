@@ -10,6 +10,12 @@ class Settings():
         self._bg_color = (230, 230, 230)
         self._ship_speed_factor =1.5
 
+        # Configurações dos projéteis
+        self.bullet_speed_factor = 1
+        self.bullet_width = 3
+        self.bullet_height = 15
+        self.bullet_color = 60, 60, 60
+
     @property
     def screen_width(self):
         return self._screen_width
