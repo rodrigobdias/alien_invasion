@@ -18,19 +18,19 @@ class Settings():
         self.bullet_allowed:int = 3
 
     @property
-    def screen_width(self):
+    def screen_width(self)->int:
         return self._screen_width
 
     @property
-    def screen_height(self):
+    def screen_height(self)->int:
        return self._screen_height
 
     @property
-    def bg_color(self):
+    def bg_color(self)->tuple:
        return self._bg_color
 
     @property
-    def ship_speed_factor(self):
+    def ship_speed_factor(self)->float:
         return self._ship_speed_factor
 
 
