@@ -5,17 +5,17 @@ class Settings():
         """Inicializa as configurações do jogo."""
 
         # Configurações da tela
-        self._screen_width = 1200
-        self._screen_height = 800
-        self._bg_color = (230, 230, 230)
-        self._ship_speed_factor =1.5
+        self._screen_width:int = 1200
+        self._screen_height:int = 800
+        self._bg_color:tuple = (230, 230, 230)
+        self._ship_speed_factor:float = 1.5
 
         # Configurações dos projéteis
-        self.bullet_speed_factor = 1
-        self.bullet_width = 3
-        self.bullet_height = 15
+        self.bullet_speed_factor:int = 1
+        self.bullet_width:int = 3
+        self.bullet_height:int = 15
         self.bullet_color = 60, 60, 60
-        self.bullet_allowed = 3
+        self.bullet_allowed:int = 3
 
     @property
     def screen_width(self):
