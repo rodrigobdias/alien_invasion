@@ -12,10 +12,14 @@ def check_keydown_events(event, ai_settings, sreen, ship, bullets):
     elif event.key == pygame.K_LEFT:
         ship.moving_left = True
     elif event.key == pygame.K_SPACE:
-        # Cria um novo projétil e o adiciona ao grupo de projéteis
-        if len(bullets) < ai_settings.bullet_allowed:
-            new_bullet = Bullet(ai_settings, sreen, ship)
-            bullets.add(new_bullet)
+        fire_bullet(ai_settings, sreen, ship, bullets)
+
+def fire_bullet(ai_settings, sreen, ship, bullets):
+    """ Dispara um projétil se o limite ainda não foi alcançado. """
+    # Cria um novo projétil e o adiciona ao grupo de projéteis
+    if len(bullets) < ai_settings.bullet_allowed:
+        new_bullet = Bullet(ai_settings, sreen, ship)
+        bullets.add(new_bullet)
 
 
 def check_keyup_events(event, ship):
